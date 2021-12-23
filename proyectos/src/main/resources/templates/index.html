@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
-    <title>Bake your day</title>
-   
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
-    
-    <!-- Materialize.css -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!-- CSS Estilos -->
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
 
-	<div class="container">
-		<div class="row">
-			<div class="col s12">
-				<h1 class="center-align titulo">Bake your day</h1>
-				
-				<div class="carousel center-align">
-					<div class="carousel-item">
-						<h2 class="subtitulo">Donas</h2>
-						<div class="linea-division"></div>
-						<p class="sabor">Clásicas</p>
-						<img th:src="@{img/img_tutorial/dona-01.jpg}">					
-					</div>	
-					
-					<div class="carousel-item">
-						<h2 class="subtitulo">Tortas</h2>
-						<div class="linea-division"></div>
-						<p class="sabor">Chilenas</p>
-						<img th:src="@{img/img_tutorial/pastel-01.jpg}">					
-					</div>
-					
-					<div class="carousel-item">
-						<h2 class="subtitulo">Postres</h2>
-						<div class="linea-division"></div>
-						<p class="sabor">Simples</p>
-						<img th:src="@{img/img_tutorial/muffins-01.jpg}">					
-					</div>			
-				</div>
-			</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Caompatible" content="ie=edge">
+	<title>Bake your day</title>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+
+	<!-- Materialize.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- CSS Estilos -->
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="index_carrusel">
+	<h1 class="center-align titulo">Bake your day</h1>
+
+	<div class="carousel center-align">
+		<div class="carousel-item">
+			<h2 class="subtitulo">Galletas</h2>
+			<div class="linea-division"></div>
+			<p class="sabor">Clásicas</p>
+			<a class="nav-link" th:href="@{galletas}">
+				<img th:src="@{img/cookie.jpg}">
+			</a>
 		</div>
+
+		<div class="carousel-item">
+			<h2 class="subtitulo">Tortas</h2>
+			<div class="linea-division"></div>
+			<p class="sabor">Variadas</p>
+			<a class="nav-link" th:href="@{tortas}">
+				<img th:src="@{img/img_tutorial/pastel-01.jpg}">
+			</a>
+		</div>
+
+		<div class="carousel-item">
+			<h2 class="subtitulo">Postres</h2>
+			<div class="linea-division"></div>
+			<p class="sabor">Simples</p>
+			<a class="nav-link" th:href="@{postres}">
+				<img th:src="@{img/dessert.jpg}">
+			</a>
+		</div>
+
+		<div class="carousel-item">
+			<h2 class="subtitulo">Dulce</h2>
+			<div class="linea-division"></div>
+			<p class="sabor">Difícil</p>
+			<a class="nav-link" th:href="@{dulce}">
+				<img th:src="@{img/imagen3.jpg}">
+			</a>
+		</div>
+
+		<div class="carousel-item">
+			<h2 class="subtitulo">Cóctel</h2>
+			<div class="linea-division"></div>
+			<p class="sabor">Dulce</p>
+			<a class="nav-link" th:href="@{coctel}">
+				<img th:src="@{img/imagen2.jpg}">
+			</a>
+		</div>
+
+	</div>
+	</div>
+	</div>
 	</div>
 
 
-    
-    <!-- Materialize.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   
-    <!-- JS Main -->
-    <script src="js/main.js"></script>
+
+	<!-- Materialize.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<!-- JS Main -->
+	<script src="js/main.js"></script>
 </body>
+
 </html>
