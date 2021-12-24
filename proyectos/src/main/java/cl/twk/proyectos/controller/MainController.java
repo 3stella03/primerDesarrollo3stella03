@@ -11,11 +11,6 @@ public class MainController {
 		return "recetasTortas";
 	}
 	
-	@GetMapping(value = "donas")
-	public String donas() {
-		return "donas";
-	}
-	
 	@GetMapping(value = "postres")
 	public String postres() {
 		return "postres";
@@ -31,4 +26,8 @@ public class MainController {
 		return "dulce";
 	}
 	
+	@GetMapping(value = "galletas")
+	public String galletas() {
+		return "galletas";
+	}
 }
